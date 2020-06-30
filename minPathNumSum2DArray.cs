@@ -7,6 +7,8 @@ was solved with the concept of dynamic programming because
 the solution involved asking each square individually what is the lowest sum to get to it.
 building on that if each square knows to respond how much needs sum up to get to it,
 the bottom right square from recursion can output a response
+
+time complexity: O(n) because need to visit each square once
 */
 
 
