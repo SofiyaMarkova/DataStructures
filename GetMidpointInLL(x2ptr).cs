@@ -10,6 +10,7 @@ so return the value at the slow "pointer" (pointer because becomes saved node in
 
 2 pointers are of big use here because it keeps the compelxity to O(n) as it only has to go
 once and during the go it checks for the middle
+doing 2 pointers at the same time so not have to traverse again after. saves on time complexity
 
 time compelxity: O(n)
 */
