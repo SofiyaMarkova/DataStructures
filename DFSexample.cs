@@ -30,7 +30,12 @@ namespace Sid
 
             while(need_to_check.Count > 0)
             {
-                int curr_node = need_to_check.Dequeue();
+                //Dequeue() equivalent to:
+                //Node currNode = queue[queue.Count - 1]; 
+                //queue.Remove(currNode);
+                
+                int curr_node = need_to_check.Dequeue();  //Dequeue() removes and returns a first element from a queue because the queue stores elements in FIFO order.
+                //gives to be used and returns last element in Stack
 
                 if(curr_node == target)
                 {
@@ -43,7 +48,7 @@ namespace Sid
                 {
                     if(!deadEndSet.Contains(possibleState) && !seen.Contains(possibleState))
                     {
-                        need_to_check.Enqueue(possibleState);
+                        need_to_check.Enqueue(possibleState); //Enqueue() method adds elements into front Queue. equivalent to queue.Add(possibleState);
                         seen.Add(possibleState);
                     }
                 }
